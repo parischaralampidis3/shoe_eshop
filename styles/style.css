@@ -35,13 +35,25 @@ ul,li,.breadcrumb-li-item-active{
     margin-right:35px;
 }
 
-.image-zoom {
-    transition: transform 0.6s ease; /* Smooth transition */
-}
 
-.image-zoom:hover {
-    transform: scale(1.03); /* Scale the image on hover */
-}
 .close-top{
     display:none;
 }
+.policy{
+    color:#bab8b8;
+}
+a .policy:hover{
+    color:#999;
+}
+
+  .hover-zoom {
+            overflow: hidden; /* Hide overflow */
+        }
+
+        .hover-zoom img {
+            transition: transform 0.8s ease; /* Smooth transition */
+        }
+
+        .hover-zoom:hover img {
+            transform: scale(1.2); /* Zoom effect */
+        }
