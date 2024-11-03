@@ -30,6 +30,11 @@ ul,li,.breadcrumb-li-item-active{
 .colorRadio{
     cursor: pointer;
 }
+
+.xButton{
+    margin-right:35px;
+}
+
 .image-zoom {
     transition: transform 0.6s ease; /* Smooth transition */
 }
