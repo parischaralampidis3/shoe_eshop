@@ -1,0 +1,79 @@
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo/logo_img.png" alt="logo" />
+            </a>
+            <!--show cart icon at responsive view-->
+            <div class="d-block d-lg-none">
+              <a class="navbar-brand" href="#"
+                ><img
+                  class="w-70 mx-1"
+                  src="./images/icons/icon_cart.png"
+                  alt="cart"
+              /></a>
+            </div>
+
+            <!------>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Αρχική</a
+                  >
+                </li>
+                <div class="d-flex items-center">
+                  <li class="nav-item items-center">
+                    <a class="nav-link" href="#">Προϊόντα</a>
+                  </li>
+                  <a href="#">
+                    <img
+                      class="dropdown-icon"
+                      src="./images/icons/dropdown-icon.png"
+                    />
+                  </a>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Επικοινωνία</a>
+                </li>
+              </ul>
+
+              <form class="d-flex">
+                <input
+                  class="form-control rounded-pill me-2"
+                  type="search"
+                  placeholder="Ψάξε για προιόν.."
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success bg-primary text-white"
+                  type="submit"
+                >
+                  Αναζήτηση
+                </button>
+              </form>
+              <div class="d-none d-lg-block mx-4">
+                <a class="navbar-brand" href="#"
+                  ><img
+                    class="w-70"
+                    src="./images/icons/icon_cart.png"
+                    alt="cart"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>

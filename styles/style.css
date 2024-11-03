@@ -1,0 +1,42 @@
+.margin-button{
+    margin-right:20px;
+}
+.breadccrumb-margin{
+    margin-left:79px;
+}
+.breadcrumb-li-item{
+    color:#fff;
+    font-size:12px;
+}
+ul,li,.breadcrumb-li-item-active{
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+}
+.dropdown-icon{
+    width:20px; 
+    height:20px;
+     margin-top:10px;
+}
+.notification {
+    display: flex; 
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius:15px;
+    margin-top: 10px;
+    margin-left:10px;
+}
+.colorRadio{
+    cursor: pointer;
+}
+.image-zoom {
+    transition: transform 0.6s ease; /* Smooth transition */
+}
+
+.image-zoom:hover {
+    transform: scale(1.03); /* Scale the image on hover */
+}
+.close-top{
+    display:none;
+}
