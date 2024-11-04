@@ -119,11 +119,16 @@ font-size: 30px;
     opacity:1;
 }
 
-.right-arrow:hover{
+.left-arrow:hover{
     border:1px solid black;
     width:25px;
     height:25px;
     padding:3px;
     border-radius:50%;
     opacity:1;
+}
+
+.sizeRadio{
+    cursor: pointer;
+
 }
