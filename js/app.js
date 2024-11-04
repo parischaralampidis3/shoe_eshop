@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let increaseBtn = document.getElementById("plus");
   let descreaseBtn = document.getElementById("minus");
+  
   let addCartBtn = document.getElementById("addToCart");
-
   let containerTop = document.querySelector(".topId");
   let closeBtn = document.getElementById("close-button");
 
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("quantityResult").innerHTML = count;
   }
 
+  //carousel functionality
   var slides = document.querySelector(".slider-items").children;
   var nextSlide = document.querySelector(".right-side");
   var prevSlide = document.querySelector(".left-side");
@@ -80,12 +81,30 @@ document.addEventListener("DOMContentLoaded", function () {
     
   }
 
+  //select size product
+  let selectSize = document.querySelectorAll(".sizeInput");
+
+   selectSize.forEach((input) => {
+    input.addEventListener("click", function () {
+      changeSize(this); 
+    });
+  });
+
+  function changeSize(selectedInput) {
+    selectSize.forEach(el => {
+      el.style.border = "1px solid black"; 
+    });
+    selectedInput.style.border = "5px solid #999";
+  } 
+
+
+  // color pick functionality
   let colorRadioContainer = document.querySelectorAll(".colorRadio");
   let selectColor = document.getElementById("colorInput");
   colorRadioContainer.forEach((radio) => {
     radio.addEventListener("change", pickColor);
   });
-  // color pick functionality
+
   function pickColor() {
     let productSelectedColor = document.querySelector(
       'input[name="color"]:checked'
